@@ -4,4 +4,12 @@ return require('packer').startup(function()
 
   -- Colorscheme
   use 'sainnhe/sonokai'
+
+  -- Mason + LSP + linter 
+   use {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+    "mfussenegger/nvim-lint"
+   }
 end)

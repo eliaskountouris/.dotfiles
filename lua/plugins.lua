@@ -33,4 +33,40 @@ return require('packer').startup(function()
 		"nvim-lua/plenary.nvim",
 		'nvim-telescope/telescope.nvim', 
 	}
+
+	-- Docs View
+	use {
+		"amrbashir/nvim-docs-view",
+		opt = true,
+		cmd = { "DocsViewToggle" },
+		config = function()
+		require("docs-view").setup {
+			position = "right",
+			width = 60,
+		}
+		end
+	}
+
+	-- Guess Indent
+	use {
+		'nmac427/guess-indent.nvim',
+		config = function() require('guess-indent').setup {} end,
+	}
+
+	-- BarBar + Devicons
+	use {
+		"nvim-tree/nvim-web-devicons",
+		"romgrk/barbar.nvim"
+	}
+
+	-- Cheatsheet
+	use {
+		"nvim-lua/popup.nvim",
+		"sudormrfbin/cheatsheet.nvim"
+	}
+	
+	-- Cursor Line
+	use {
+		"yamatsum/nvim-cursorline"
+	}
 end)

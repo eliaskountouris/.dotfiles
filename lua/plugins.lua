@@ -3,7 +3,7 @@ return require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
 
 	-- Colorscheme
-	use 'sainnhe/sonokai'
+	use "joshdick/onedark.vim"
 
 	-- Mason + LSP + linter 
 	use {

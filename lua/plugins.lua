@@ -6,12 +6,12 @@ return require('packer').startup(function()
 	use "joshdick/onedark.vim"
 
 	-- Mason + LSP + linter 
-	use {
+use {
 		"williamboman/mason.nvim",
-		"williamboman/mason-lspconfig.nvim",
+"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
 		"mfussenegger/nvim-lint"
-	}
+}
 
 	-- COQ
 	use {
@@ -42,7 +42,7 @@ return require('packer').startup(function()
 		config = function()
 		require("docs-view").setup {
 			position = "right",
-			width = 60,
+			width = 30,
 		}
 		end
 	}

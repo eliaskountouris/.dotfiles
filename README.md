@@ -12,4 +12,4 @@
 - devicons
 - cheatsheet
 - cursorline
-
+- wilder

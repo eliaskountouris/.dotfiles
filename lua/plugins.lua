@@ -69,4 +69,9 @@ use {
 	use {
 		"yamatsum/nvim-cursorline"
 	}
+
+	-- Wilder
+	use {
+		'gelguy/wilder.nvim'
+	}
 end)

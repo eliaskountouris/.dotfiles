@@ -1,4 +1,4 @@
-require'bufferline'.setup {
+require('bufferline').setup {
   animation = true,
   auto_hide = true,
   tabpages = false,

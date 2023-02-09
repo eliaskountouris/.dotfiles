@@ -1,6 +1,8 @@
 Setup config for each lsp
 Setup nvim-dap
 RIPgrep installer
+NVIM installer
 git-blame
 dashboard
+function def finder w/ grep / lsp
 

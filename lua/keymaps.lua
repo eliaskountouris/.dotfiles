@@ -19,6 +19,8 @@ vim.g.mapleader = " "
 	map('n', '<leader>,', '<Cmd>foldclose<CR>', opts)	
 	-- Open Fold
 	map('n', '<leader>.', '<Cmd>foldopen<CR>', opts)	
+	-- Open All Fold
+	map('n', '<leader>/', 'zR', {silent = true, noremap = false})	
 
 -- BarBar Keymaps ---------------------------------
 	-- Switch Buffers
@@ -27,6 +29,10 @@ vim.g.mapleader = " "
 	-- Close Buffer
 	map('n', '<A-c>', '<Cmd>BufferClose<CR>', opts)
 	-- Smart Buffer Pick
-	map('n', '<A-p>', '<Cmd>BufferPick<CR>', opts)
+	map('n', '<A-/>', '<Cmd>BufferPick<CR>', opts)
 	-- Sort Buffers
 	map('n', '<A-s>', '<Cmd>BufferOrderByDirectory<CR>', opts)
+	-- Open Vertical Tab
+	map('n', '<A-;>', '<Cmd>vertical sb<CR>', opts)
+	-- Open Horizontal Tab
+	map('n', '<A-\'>', '<Cmd>sb<CR>', opts)

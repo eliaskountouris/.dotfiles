@@ -74,4 +74,5 @@ use {
 	use {
 		'gelguy/wilder.nvim'
 	}
+	
 end)

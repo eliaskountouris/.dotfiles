@@ -13,6 +13,8 @@ vim.g.mapleader = " "
 	map('n', '<leader>fg', '<Cmd>Telescope live_grep<CR>', opts)
 	-- Treesitter functions, symbols
 	map('n', '<leader>ft', '<Cmd>Telescope treesitter<CR>', opts)
+	-- Treesitter functions, symbols
+	map('n', '<leader>fc', '<Cmd>Telescope current_buffer_fuzzy_find<CR>', opts)
 
 -- Treesitter Keymaps -------------------------------
 	-- Close Fold

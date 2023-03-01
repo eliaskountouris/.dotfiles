@@ -80,4 +80,8 @@ return require('packer').startup(function()
 		'github/copilot.vim'
 	}
 
+	-- Git Blame
+	use {
+		'f-person/git-blame.nvim'
+	}
 end)

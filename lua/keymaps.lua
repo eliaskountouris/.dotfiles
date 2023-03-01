@@ -21,10 +21,12 @@ vim.g.mapleader = " "
 	map('n', '<leader>fs', '<Cmd>Telescope lsp_type_definitions<CR>', opts)
 
 -- Telescope Git Keymaps ---------------------------------
-	-- Git Status
+	-- Git Commits 
 	map('n', '<leader>gc', '<Cmd>Telescope git_commits<CR>', opts)
 	-- Git Status
 	map('n', '<leader>gs', '<Cmd>Telescope git_status<CR>', opts)
+	-- Git Blame
+	map('n', '<leader>gb', '<Cmd>GitBlameToggle<CR>', opts)
 
 -- Treesitter Keymaps -------------------------------
 	-- Close Fold

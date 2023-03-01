@@ -2,6 +2,4 @@ Setup config for each lsp
 Setup nvim-dap
 RIPgrep installer
 NVIM installer
-git-blame
 dashboard
-go to def

@@ -14,3 +14,4 @@
 - cursorline
 - wilder
 - Github Copilot
+- Git blame

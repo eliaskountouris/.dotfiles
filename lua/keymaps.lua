@@ -5,6 +5,8 @@ vim.g.mapleader = " "
 -- Basic Keymaps ---------------------------------
 	-- Open File Viewer
 	map('n', '<leader>e', '<Cmd>Explore<CR>', opts)
+-- Open Cheatsheet 
+	map('n', '<leader>c', '<Cmd>Cheatsheet<CR>', opts)
 
 -- Telescope Find Keymaps ---------------------------------
 	-- Find File
@@ -40,6 +42,8 @@ vim.g.mapleader = " "
 	-- Switch Buffers
 	map('n', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
 	map('n', '<A-.>', '<Cmd>BufferNext<CR>', opts)
+	map('i', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
+	map('i', '<A-.>', '<Cmd>BufferNext<CR>', opts)
 	-- Close Buffer
 	map('n', '<A-c>', '<Cmd>BufferClose<CR>', opts)
 	-- Smart Buffer Pick

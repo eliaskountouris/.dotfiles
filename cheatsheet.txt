@@ -1,1 +1,31 @@
+## eli-basic 
+Open Explorer | <leader>e
+Open Cheatsheet | <leader>c
+
+## eli-telescope @telescope @Telescope @search @Search @Find @find @grep @Grep @Goto @goto
+Find Files | <leader>ff
+Live Grep | <leader>fg
+Find Telescope Symbol | <leader>ft
+Traditional Ctrl-f / Find word | <leader>fc
+Goto definition | <leader>fd
+Goto type definition | <leader>fs
+
+## eli-git @git @Git 
+Git Status | <leader>gs
+Git Blame | <leader>gb
+Git Commit History | <leader>gc
+
+## eli-folds @folds @Folds @treesitter @Treesitter
+Open Fold | <leader>.
+Close Fold | <leader>,
+Toggle All Folds | <leader>/
+
+## eli-bar @barbar @Barbar @buffers @Buffers @tabs @Tabs
+Next Buffer | <A-.>
+Prev Buffer | <A-,>
+Sort Buffers | <A-s>
+Close Buffer | <A-c>
+Pick Buffer | <A-/>
+Vertical Side Buffer | <A-;>
+Horizontal Side Buffer | <A-'>
 

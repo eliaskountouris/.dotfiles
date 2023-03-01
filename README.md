@@ -13,3 +13,4 @@
 - cheatsheet
 - cursorline
 - wilder
+- Github Copilot

@@ -4,5 +4,4 @@ RIPgrep installer
 NVIM installer
 git-blame
 dashboard
-function def finder w/ grep / lsp
-
+go to def

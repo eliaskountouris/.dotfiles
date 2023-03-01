@@ -75,4 +75,8 @@ use {
 		'gelguy/wilder.nvim'
 	}
 	
+	-- Github Copilot
+	use {
+		'github/copilot.vim'
+	}
 end)

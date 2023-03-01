@@ -6,12 +6,12 @@ return require('packer').startup(function()
 	use "joshdick/onedark.vim"
 
 	-- Mason + LSP + linter 
-use {
+	use {
 		"williamboman/mason.nvim",
-"williamboman/mason-lspconfig.nvim",
+		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
 		"mfussenegger/nvim-lint"
-}
+	}
 
 	-- COQ
 	use {
@@ -79,4 +79,5 @@ use {
 	use {
 		'github/copilot.vim'
 	}
+
 end)

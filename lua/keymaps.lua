@@ -6,15 +6,25 @@ vim.g.mapleader = " "
 	-- Open File Viewer
 	map('n', '<leader>e', '<Cmd>Explore<CR>', opts)
 
--- Telescope Keymaps ---------------------------------
+-- Telescope Find Keymaps ---------------------------------
 	-- Find File
 	map('n', '<leader>ff', '<Cmd>Telescope find_files<CR>', opts)
 	-- Live Grep
 	map('n', '<leader>fg', '<Cmd>Telescope live_grep<CR>', opts)
 	-- Treesitter functions, symbols
 	map('n', '<leader>ft', '<Cmd>Telescope treesitter<CR>', opts)
-	-- Treesitter functions, symbols
+	-- Ctrl f for Telescope
 	map('n', '<leader>fc', '<Cmd>Telescope current_buffer_fuzzy_find<CR>', opts)
+	-- Treesitter goto definitions
+	map('n', '<leader>fd', '<Cmd>Telescope lsp_definitions<CR>', opts)
+	-- Treesitter goto type definitions
+	map('n', '<leader>fs', '<Cmd>Telescope lsp_type_definitions<CR>', opts)
+
+-- Telescope Git Keymaps ---------------------------------
+	-- Git Status
+	map('n', '<leader>gc', '<Cmd>Telescope git_commits<CR>', opts)
+	-- Git Status
+	map('n', '<leader>gs', '<Cmd>Telescope git_status<CR>', opts)
 
 -- Treesitter Keymaps -------------------------------
 	-- Close Fold

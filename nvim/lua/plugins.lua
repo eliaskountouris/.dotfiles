@@ -76,12 +76,23 @@ return require('packer').startup(function()
 	}
 	
 	-- Github Copilot
-	use {
-		'github/copilot.vim'
-	}
+--	use {
+--		'github/copilot.vim'
+--	}
 
 	-- Git Blame
 	use {
 		'f-person/git-blame.nvim'
 	}
+
+	-- Packer
+	use({
+		"jackMort/ChatGPT.nvim",
+		requires = {
+		"MunifTanjim/nui.nvim",
+		"nvim-lua/plenary.nvim",
+		"nvim-telescope/telescope.nvim"
+		}
+	})
+
 end)

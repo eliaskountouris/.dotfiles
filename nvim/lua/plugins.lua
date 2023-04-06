@@ -85,14 +85,4 @@ return require('packer').startup(function()
 		'f-person/git-blame.nvim'
 	}
 
-	-- Packer
-	use({
-		"jackMort/ChatGPT.nvim",
-		requires = {
-		"MunifTanjim/nui.nvim",
-		"nvim-lua/plenary.nvim",
-		"nvim-telescope/telescope.nvim"
-		}
-	})
-
 end)

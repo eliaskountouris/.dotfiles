@@ -8,8 +8,8 @@ source $HOME/.aliases
 source $HOME/.keys
 
 # zsh config
-ZSH_THEME="healy"
-plugins=(git)
+ZSH_THEME="robbyrussell"
+plugins=(git ripgrep)
 
 # Needs to be last line
 source $ZSH/oh-my-zsh.sh

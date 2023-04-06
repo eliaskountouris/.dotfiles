@@ -22,3 +22,9 @@ alias rocketry='cd ~/Desktop/Projects/Rocketry'
 alias tm="tmux -2 attach-session || tmux -2 new-session"
 alias sc="screen -r || screen"
 alias swap="cd /home/elias/.local/state/nvim/swap"
+
+acp () {
+	git add .
+	git commit -m "$1"
+	git push
+}

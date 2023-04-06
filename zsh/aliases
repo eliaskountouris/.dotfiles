@@ -1,0 +1,24 @@
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias diff='colordiff'
+alias ls='ls --color=auto'
+
+alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
+alias la='ls -a --ignore=..'   # show listing of all except ".."
+alias l='ls -a --ignore=..'   
+
+alias nv='nvim'
+alias v='nvim'
+alias vim='nvim'
+alias e='nvim'
+alias emacs='nvim'
+alias :q="exit"
+alias :x="exit"
+
+alias projects='cd ~/Desktop/Projects'
+alias rocketry='cd ~/Desktop/Projects/Rocketry'
+
+alias tm="tmux -2 attach-session || tmux -2 new-session"
+alias sc="screen -r || screen"
+alias swap="cd /home/elias/.local/state/nvim/swap"

@@ -1,5 +1,10 @@
 #!/bin/sh
-set -e
+
+# zsh install
+cmd="sh zsh/install_ZSH.sh"
+echo $cmd
+$cmd
+echo "ZSH Installed!"
 
 # Link nvim
 cmd="ln -sf $PWD/nvim $HOME/.config/nvim"

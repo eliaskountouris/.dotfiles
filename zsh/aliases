@@ -1,9 +1,8 @@
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias diff='colordiff'
-alias ls='ls --color=auto'
+#!/bin/sh
 
+alias grep='rg --color=auto'
+
+alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
 alias la='ls -a --ignore=..'   # show listing of all except ".."
 alias l='ls -a --ignore=..'   
@@ -24,7 +23,15 @@ alias sc="screen -r || screen"
 alias swap="cd /home/elias/.local/state/nvim/swap"
 
 acp () {
-	git add .
-	git commit -m "$1"
-	git push
+	read "REPLY?Are you sure? [y/N] "
+	if [[ $REPLY =~ ^[Yy]$ ]]; then
+		if [ $# -eq 0 ]; then
+			echo "No commit message"
+			exit -1
+		fi
+		git add .
+		git commit -m "$1"
+		git push
+		echo "Commited with message '$1'"
+	fi
 }

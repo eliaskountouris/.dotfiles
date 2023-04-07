@@ -15,7 +15,7 @@ echo "ZSH Installed!"
 
 # install oh-my-zsh
 if [ ! -d "$1/.oh-my-zsh" ]; then
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 fi
 
 # Set as default shell

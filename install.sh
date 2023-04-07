@@ -2,29 +2,31 @@
 
 set -e
 
+# Get home path
 if [ $# -eq 0 ]; then
 	echo "Missing path to home!"
 	exit -1
 fi
 
 # zsh install
-cmd="sh zsh/install_ZSH.sh $1"
+cmd="sh zsh/install.sh $1"
 echo $cmd
 $cmd
 echo "ZSH Installed!"
 
 # Link nvim
-cmd="ln -sf $PWD/nvim $1/.config/nvim"
+cmd="sh nvim/install.sh $1"
 echo $cmd
 $cmd
-echo "Linked nvim!"
+echo "Nvim Installed!"
 
-for file in *;
+for file in "files/"*;
 do
 	if [[ -f $file ]]; then
-		cmd="ln -sf $PWD/$file $1/.$file"
+		base=$(basename $file)
+		cmd="ln -sf $PWD/$file $1/.$base"
 		echo $cmd
 		$cmd
-		echo "Linked $file!"
+		echo "Linked $base!"
 	fi
 done

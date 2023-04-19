@@ -75,11 +75,6 @@ return require('packer').startup(function()
 		'gelguy/wilder.nvim'
 	}
 	
-	-- Github Copilot
---	use {
---		'github/copilot.vim'
---	}
-
 	-- Git Blame
 	use {
 		'f-person/git-blame.nvim'

@@ -55,7 +55,6 @@ return require('packer').startup(function()
 
 	-- BarBar + Devicons
 	use {
-		"nvim-tree/nvim-web-devicons",
 		"romgrk/barbar.nvim"
 	}
 
@@ -78,6 +77,12 @@ return require('packer').startup(function()
 	-- Git Blame
 	use {
 		'f-person/git-blame.nvim'
+	}
+
+	-- Tree
+	use {
+		'nvim-tree/nvim-tree.lua',
+		'nvim-tree/nvim-web-devicons'
 	}
 
 end)

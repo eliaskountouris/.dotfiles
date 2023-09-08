@@ -4,7 +4,7 @@ vim.g.mapleader = " "
 
 -- Basic Keymaps ---------------------------------
 	-- Open File Viewer
-	map('n', '<leader>e', '<Cmd>Explore<CR>', opts)
+	map('n', '<leader>e', '<Cmd>NvimTreeToggle<CR>', opts)
 -- Open Cheatsheet 
 	map('n', '<leader>c', '<Cmd>Cheatsheet<CR>', opts)
 

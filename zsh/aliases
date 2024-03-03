@@ -21,6 +21,9 @@ alias rocketry='cd ~/Desktop/Projects/Rocketry'
 alias tm="tmux -2 attach-session || tmux -2 new-session"
 alias sc="screen -r || screen"
 alias swap="cd /home/elias/.local/state/nvim/swap"
+alias eceuw="ssh -X ekountou@129.97.92.188"
+alias toECEUW="scp $1 ekountou@129.97.92.188:~/"
+alias nvimECEUW="vim scp://ekountou@129.97.92.188//home/ekountou/"
 
 acp () {
 	read "REPLY?Are you sure? [y/N] "

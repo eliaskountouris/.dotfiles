@@ -10,7 +10,7 @@ fi
 export ZSH=$1/.oh-my-zsh
 
 # install ZSH
-pacman -S zsh
+dnf install zsh
 echo "ZSH Installed!"
 
 # install oh-my-zsh

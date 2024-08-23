@@ -1,16 +1,5 @@
-[credential "https://github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
-[credential "https://gist.github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
-[safe]
-	directory = /home/elias/Desktop/Projects/MysteriumRerouted
-[core]
-	autocrlf = false
-[usr]
-	name = Elias Kountouris
-	email = 22262792+eliaskountouris@users.noreply.github.com 
-[user]
-	name = Elias Kountouris
-	email = eliasjkountouris@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

@@ -25,6 +25,11 @@ return{{
 		config = function()
 		require("nvim-tree").setup {}
 		end,
-	}
-}}
+	},
+	'nosduco/remote-sshfs.nvim',
+    {
+      "olimorris/onedarkpro.nvim",
+      priority = 1000, -- Ensure it loads first
+    }
 
+}}

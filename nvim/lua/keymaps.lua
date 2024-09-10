@@ -42,16 +42,23 @@ vim.g.mapleader = " "
 	-- Switch Buffers
 	map('n', '≤', '<Cmd>BufferPrevious<CR>', opts)
 	map('n', '≥', '<Cmd>BufferNext<CR>', opts)
+	map('n', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
+	map('n', '<A-.>', '<Cmd>BufferNext<CR>', opts)
 	-- Close Buffer
 	map('n', 'ç', '<Cmd>BufferClose<CR>', opts)
+	map('n', '<A-c>', '<Cmd>BufferClose<CR>', opts)
 	-- Smart Buffer Pick
 	map('n', '÷', '<Cmd>BufferPick<CR>', opts)
+	map('n', '<A-/>', '<Cmd>BufferPick<CR>', opts)
 	-- Sort Buffers
 	map('n', 'ß', '<Cmd>BufferOrderByDirectory<CR>', opts)
+	map('n', '<A-s>', '<Cmd>BufferOrderByDirectory<CR>', opts)
 	-- Open Vertical Tab
 	map('n', '…', '<Cmd>vertical sb<CR>', opts)
+	map('n', '<A-;>', '<Cmd>vertical sb<CR>', opts)
 	-- Open Horizontal Tab
 	map('n', 'æ', '<Cmd>sb<CR>', opts)
+	map('n', '<A-\'>', '<Cmd>sb<CR>', opts)
 
 -- Window Keymaps ---------------------------------
 map('n', '<c-k>', '<Cmd>wincmd k<CR>', opts)

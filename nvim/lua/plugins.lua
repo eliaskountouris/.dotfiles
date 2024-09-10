@@ -4,8 +4,6 @@ return{{
 	"williamboman/mason-lspconfig.nvim",
 	"neovim/nvim-lspconfig",
 	"mfussenegger/nvim-lint",
-	"ms-jpq/coq_nvim",
-	"ms-jpq/coq.artifacts",
 	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
 	"nvim-lua/plenary.nvim",
 	"nvim-telescope/telescope.nvim",

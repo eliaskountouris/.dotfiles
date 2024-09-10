@@ -1,4 +1,5 @@
 #!/bin/sh
+alias sudo="sudo "
 
 alias grep='rg --color=auto'
 
@@ -17,18 +18,13 @@ alias :x="exit"
 
 alias tm="tmux -2 attach-session || tmux -2 new-session"
 alias sc="screen -r || screen"
-alias swap="cd /Users/elias/.local/state/nvim/swap"
-alias nvimServer="nvim scp://eliask@login2.untetherai.com//server/home/eliask/"
-alias nvimWorks="nvim scp://eliask@login2.untetherai.com//server/projects/camden/c1/workspaces/eliask/"
-alias server="ssh eliask@compute7.untetherai.com" # 192.168.64.102
-
-toServer() {
-    scp $1 eliask@login2.untetherai.com:/server/home/eliask
-}
-
-fromServer() {
-    scp eliask@login2.untetherai.com:"$1" .
-}
+alias swap="cd /home/elias/.local/state/nvim/swap"
+alias eceuw="ssh -X ekountou@ecetesla1.uwaterloo.ca"
+alias eceMnt="sshfs -o allow_other,reconnect,ServerAliveInterval=30 ekountou@ecetesla1.uwaterloo.ca:/home/ekountou/ $1"
+alias toECEUW="scp $1 ekountou@ecetesla1.uwaterloo.caa:~/"
+alias toOracle="scp -i ~/.ssh/oracle.key $1 opc@140.238.129.239:~/"
+alias nvimECEUW="vim scp://ekountou@ecetesla1.uwaterloo.ca//home/ekountou/"
+alias oracle="kitty +kitten ssh -i ~/.ssh/oracle.key opc@140.238.129.239"
 
 acp() {
 	read "REPLY?Are you sure? [y/N] "
@@ -44,12 +40,5 @@ acp() {
 	fi
 }
 
-knock() {
-    if [[$1 != "knock" ]]; then
-        exit -1
-    else
-        read "Who's :xjkthere?"
-    fi
-}
 set -o vi
 neofetch

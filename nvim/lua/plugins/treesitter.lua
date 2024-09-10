@@ -8,7 +8,7 @@ vim.api.nvim_create_autocmd({'BufEnter','BufAdd','BufNew','BufNewFile','BufWinEn
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = { "c", "lua", "bash", "help", "cpp", 
-  "css", "html", "javascript", "python", "verilog", "yaml"},
+  "css", "html", "javascript", "python", "verilog", "yaml", "systemverilog"},
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,

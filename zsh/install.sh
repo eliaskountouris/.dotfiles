@@ -9,10 +9,6 @@ fi
 
 export ZSH=$1/.oh-my-zsh
 
-# install ZSH
-dnf install zsh
-echo "ZSH Installed!"
-
 # install oh-my-zsh
 if [ ! -d "$1/.oh-my-zsh" ]; then
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended

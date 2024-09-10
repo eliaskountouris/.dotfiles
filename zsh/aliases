@@ -1,4 +1,5 @@
 #!/bin/sh
+alias sudo="sudo "
 
 alias grep='rg --color=auto'
 
@@ -15,21 +16,17 @@ alias emacs='nvim'
 alias :q="exit"
 alias :x="exit"
 
-alias projects='cd ~/Desktop/Projects'
-alias rocketry='cd ~/Desktop/Projects/Rocketry'
-
 alias tm="tmux -2 attach-session || tmux -2 new-session"
 alias sc="screen -r || screen"
 alias swap="cd /home/elias/.local/state/nvim/swap"
-alias eceuw="ssh -X ekountou@129.97.92.172"
-alias eceuw4="ssh -X ekountou@129.97.92.188"
-alias toECEUW="scp $1 ekountou@129.97.92.172:~/"
-alias toOracle="scp -i ~/.ssh/oracle.key $1 opc@140.238.129.239:~"
-alias nvimECEUW="vim scp://ekountou@129.97.92.188//home/ekountou/"
-alias copyVCD="scp ekountou@129.97.92.188:~/ece327-w24/labs/ekountou-lab2/exp.sv ~/Desktop/ECE327"
+alias eceuw="ssh -X ekountou@ecetesla1.uwaterloo.ca"
+alias eceMnt="sshfs -o allow_other,reconnect,ServerAliveInterval=30 ekountou@ecetesla1.uwaterloo.ca:/home/ekountou/ $1"
+alias toECEUW="scp $1 ekountou@ecetesla1.uwaterloo.caa:~/"
+alias toOracle="scp -i ~/.ssh/oracle.key $1 opc@140.238.129.239:~/"
+alias nvimECEUW="vim scp://ekountou@ecetesla1.uwaterloo.ca//home/ekountou/"
 alias oracle="kitty +kitten ssh -i ~/.ssh/oracle.key opc@140.238.129.239"
 
-acp () {
+acp() {
 	read "REPLY?Are you sure? [y/N] "
 	if [[ $REPLY =~ ^[Yy]$ ]]; then
 		if [ $# -eq 0 ]; then
@@ -42,3 +39,6 @@ acp () {
 		echo "Commited with message '$1'"
 	fi
 }
+
+set -o vi
+neofetch

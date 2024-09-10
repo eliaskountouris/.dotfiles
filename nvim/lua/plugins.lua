@@ -4,8 +4,6 @@ return{{
 	"williamboman/mason-lspconfig.nvim",
 	"neovim/nvim-lspconfig",
 	"mfussenegger/nvim-lint",
-	"ms-jpq/coq_nvim",
-	"ms-jpq/coq.artifacts",
 	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
 	"nvim-lua/plenary.nvim",
 	"nvim-telescope/telescope.nvim",
@@ -25,6 +23,11 @@ return{{
 		config = function()
 		require("nvim-tree").setup {}
 		end,
-	}
-}}
+	},
+	'nosduco/remote-sshfs.nvim',
+    {
+      "olimorris/onedarkpro.nvim",
+      priority = 1000, -- Ensure it loads first
+    }
 
+}}

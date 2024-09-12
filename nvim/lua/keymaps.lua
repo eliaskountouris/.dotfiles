@@ -1,6 +1,5 @@
 local opts = { noremap = true, silent = true }
 local map = vim.api.nvim_set_keymap
-vim.g.mapleader = " "
 
 -- Basic Keymaps ---------------------------------
 	-- Open File Viewer

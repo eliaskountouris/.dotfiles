@@ -10,7 +10,7 @@ source $HOME/.aliases
 
 # zsh config
 ZSH_THEME="robbyrussell"
-plugins=(git ripgrep)
+plugins=(git)
 
 # Needs to be last line
 source $ZSH/oh-my-zsh.sh

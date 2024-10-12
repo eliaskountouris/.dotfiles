@@ -7,7 +7,12 @@ require("mason-lspconfig").setup{
 require("lspconfig").lua_ls.setup {autostart=false}
 require("lspconfig").pyright.setup {autostart=false}
 require("lspconfig").clangd.setup {autostart=false}
-require("lspconfig").verible.setup {autostart=false}
+require("lspconfig").verible.setup {
+  autostart=false,
+  cmd = { 'verible-verilog-ls', '--rules_config_search' },
+  root_dir = require('lspconfig').util.root_pattern({'.git', 'verilator.f'}),
+  format_on_save = true,
+}
 
 -- Disables virtual text
 vim.diagnostic.config({
@@ -45,14 +50,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
     -- Lists all the references 
     bufmap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<cr>')
 
-    -- Displays a function's signature information
-    bufmap('n', 'gs', '<cmd>lua vim.lsp.buf.signature_help()<cr>')
-
     -- Renames all references to the symbol under the cursor
     bufmap('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<cr>')
-
-    -- Show diagnostics in a floating window
-    bufmap('n', 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>')
 
     -- Move to the previous diagnostic
     bufmap('n', 'g,', '<cmd>lua vim.diagnostic.goto_prev()<cr>')

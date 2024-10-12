@@ -10,6 +10,9 @@ vim.o.mouse = 'a'
 vim.cmd([[
 set clipboard=unnamedplus]])
 
+vim.cmd([[
+set nowrap]])
+
 -- Yank Highlight
 vim.cmd([[
 augroup highlight_yank

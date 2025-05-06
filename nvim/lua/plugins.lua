@@ -35,6 +35,11 @@ return{{
     {
       "olimorris/onedarkpro.nvim",
       priority = 1000, -- Ensure it loads first
-    }
-
+    },
+	{
+		'goolord/alpha-nvim',
+		config = function ()
+			require'alpha'.setup(require'alpha.themes.dashboard'.config)
+		end
+	};
 }}

@@ -29,3 +29,13 @@ Pick Buffer | <A-/>
 Vertical Side Buffer | <A-;>
 Horizontal Side Buffer | <A-'>
 
+## eli-windows @windows @Windows @panels @Panels
+Window Up | <c-k>
+Window Down | <c-j>
+Window Left | <c-k>
+Window Right | <c-l>
+
+## eli-move-lines @move @Move @shift @Shift @line @Line
+Move Line Up | <A-k>
+Move Line Down | <A-j>
+

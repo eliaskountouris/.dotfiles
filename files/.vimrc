@@ -16,5 +16,9 @@ nnoremap <leader>e :Explore<CR>
 vnoremap > >gv
 vnoremap < <gv
 
+nnoremap <C-c> :tabclose<CR>
+nnoremap <C-l> :tabnext<CR>
+nnoremap <C-h> :tabprevious<CR>
+
 au BufReadPost *.v,*.sv,*.svh set syntax=verilog
 
